@@ -1,0 +1,28 @@
+# User-local environment (contains secrets and paths — never commit)
+paper.tex
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Hydra outputs
+outputs/
+multirun/
+
+# Runs / checkpoints
+runs/
+
+# Weights & Biases
+wandb/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store

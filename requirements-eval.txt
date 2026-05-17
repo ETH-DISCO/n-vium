@@ -1,0 +1,21 @@
+# Evaluation dependencies (lm-evaluation-harness)
+# Install with --no-deps to avoid overriding torch/transformers from the NGC container:
+#
+#   pip install --no-deps --target $SCRATCH/pydeps -r requirements-eval.txt
+#
+# lm-eval's deps that are NOT in the NGC container are listed below explicitly.
+# torch, transformers, tokenizers, datasets, accelerate are provided by the container.
+
+lm-eval==0.4.9.1
+
+# lm-eval extras not in the NGC container
+sqlitedict
+numexpr
+pytablewriter
+sacrebleu
+rouge_score
+nltk
+word2number
+tqdm_multiprocess
+jsonlines
+evaluate
